@@ -6,8 +6,8 @@ function Services() {
     <section className="section services" id="services">
       <div className="container">
         <Reveal>
-          <p className="eyebrow">Services</p>
-          <h2 className="section-heading">Chauffeur service with a refined point of view.</h2>
+          <p className="eyebrow">Driving Roles</p>
+          <h2 className="section-heading">The kinds of placements we recruit for.</h2>
           <p className="section-intro">{siteContent.servicesIntro}</p>
         </Reveal>
         <div className="service-grid">

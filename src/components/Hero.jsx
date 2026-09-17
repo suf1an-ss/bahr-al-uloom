@@ -5,14 +5,17 @@ function Hero() {
     <section className="hero" id="home">
       <div className="hero__inner">
         <div className="hero__copy">
-          <p className="eyebrow">VIP CHAUFFEUR SERVICES</p>
-          <h1>Your chauffeur. <span>Across the UAE.</span></h1>
-          <p className="hero__description">Bahr Al Uloom provides professional chauffeur services for VIP clients, with considered support for journeys across the UAE.</p>
-          <a className="button" href="#contact">Contact Us</a>
+          <p className="eyebrow">CHAUFFEUR JOBS ACROSS THE UAE</p>
+          <h1>Join our team of <span>professional chauffeurs.</span></h1>
+          <p className="hero__description">Bahr Al Uloom places licensed drivers into steady chauffeur roles with VIP and corporate clients across the UAE. If you drive well and present well, we want to hear from you.</p>
+          <div className="hero__actions">
+            <a className="button" href="#contact">Apply Now</a>
+            <a className="button button--ghost" href="#openings">View Latest Openings</a>
+          </div>
         </div>
         <div className="hero__visual">
           <div className="hero__route-card">
-            <span className="hero__route-label">UAE-Wide Chauffeur Service</span>
+            <span className="hero__route-label">Driving Roles UAE-Wide</span>
             <svg className="hero__route-map" viewBox="0 0 520 320" role="img" aria-label="A chauffeured car travelling along a route">
               <path className="hero__route-shadow" d={ROUTE} />
               <path className="hero__route-line" d={ROUTE} />
@@ -31,7 +34,7 @@ function Hero() {
                 <path className="hero__route-car-glass" d="M1.6 -11.2 C3.9 -11.1 5.7 -10.1 7.1 -8.1 L1.6 -8.1 Z" />
               </g>
             </svg>
-            <span className="hero__route-caption">A considered journey, from one point to the next.</span>
+            <span className="hero__route-caption">Steady placements, from one client to the next.</span>
           </div>
         </div>
       </div>
