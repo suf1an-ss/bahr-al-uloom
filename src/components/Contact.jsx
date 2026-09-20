@@ -1,9 +1,10 @@
 import { FaWhatsapp } from 'react-icons/fa'
-import { FiGlobe, FiMail, FiMapPin, FiPhone } from 'react-icons/fi'
+import { FiGlobe, FiMail, FiMapPin, FiPhone, FiUser } from 'react-icons/fi'
 import { siteContent } from '../data/siteContent'
 import Reveal from './Reveal'
 
 const details = [
+  { label: 'Contact Person', Icon: FiUser, value: siteContent.contactPersonName, note: siteContent.contactPersonRole, highlight: true },
   { label: 'Phone', Icon: FiPhone, value: siteContent.phone, href: siteContent.phoneHref, note: siteContent.phoneNote },
   { label: 'WhatsApp', Icon: FaWhatsapp, value: siteContent.phone, href: siteContent.whatsappHref, note: siteContent.whatsappNote, external: true },
   { label: 'Email', Icon: FiMail, value: siteContent.email, href: siteContent.emailHref, note: siteContent.emailNote },
@@ -18,16 +19,16 @@ function Contact() {
         <Reveal>
           <p className="eyebrow">Apply</p>
           <h2 className="section-heading">Get in touch about openings.</h2>
-          <p className="section-intro">Tell us about your licence and driving experience, and we will match you to a placement. The quickest way to reach our recruitment team is WhatsApp.</p>
+          <p className="section-intro">For more details, contact {siteContent.contactPersonName}, {siteContent.contactPersonRole}. Tell us about your licence and driving experience, and we will match you to a placement. The quickest way to reach him is WhatsApp.</p>
           <a className="button button--whatsapp" href={siteContent.whatsappHref} target="_blank" rel="noreferrer">
             <FaWhatsapp aria-hidden="true" focusable="false" />
             Apply on WhatsApp
           </a>
         </Reveal>
         <div className="contact-grid">
-          {details.map(({ label, Icon, value, href, note, external }, index) => (
+          {details.map(({ label, Icon, value, href, note, external, highlight }, index) => (
             <Reveal delay={index * 100} key={label}>
-              <div className="contact-card">
+              <div className={`contact-card ${highlight ? 'contact-card--highlight' : ''}`}>
                 <span className="contact-card__label">
                   <Icon className="contact-card__icon" aria-hidden="true" focusable="false" />
                   {label}

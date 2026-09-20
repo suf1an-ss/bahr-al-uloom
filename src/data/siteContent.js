@@ -4,6 +4,8 @@ const EMAIL = 'info@domain-pending.com'
 export const siteContent = {
   companyName: 'Bahr Al Uloom Passenger Transportation',
   brandName: 'Bahr Al Uloom',
+  contactPersonName: 'Mr. Mahboob Khan',
+  contactPersonRole: 'Owner / Manager / HR',
   phone: '+971 56 594 7661',
   phoneHref: 'tel:+971565947661',
   phoneNote: 'Call us about current openings.',
